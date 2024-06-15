@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.main-header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.intro-paragraph {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Pseudo-elements */
+.main-header::before,
+.main-header::after,
+.intro-paragraph::before,
+.intro-paragraph::after,
+.cta-button::before,
+.cta-button::after {
+    content: '';
+    position: absolute;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '*';
+    color: gold;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: #666;
+}
+
+.cta-button::before,
+.cta-button::after {
+    content: '👉';
+    color: #fff;
+}
+
+.main-header::before {
+    left: 0;
+}
+
+.main-header::after {
+    right: 0;
+}
+
+.intro-paragraph::before {
+    left: 0;
+}
+
+.intro-paragraph::after {
+    right: 0;
+}
+
+.cta-button::before {
+    left: 0;
+}
+
+.cta-button::after {
+    right: 0;
+}
